@@ -404,14 +404,14 @@ display: flex;
 
 .contact .socialMedia{
     position: relative;
-    align-items: center;
+    /* align-items: center; */
     bottom: 20px;
     display: flex; 
     flex-direction: column; 
 }
 
 .contact .socialMedia li{
-   
+   margin-left: 35%;
     list-style: none;
     margin-top: 20px;
 }
