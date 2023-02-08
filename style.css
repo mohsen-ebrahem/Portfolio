@@ -26,7 +26,7 @@ body{
 
 .navigation{
     position:fixed;
-    width: 300px;
+    width:200px;
     height:100%;
     border-right: 1px solid rgba(0,0,0,0.05);
     background: var(--white2);
@@ -75,22 +75,21 @@ body{
 
 .main{
     position: absolute;
-    width: calc(100% - 300px);
-    left:300px;
+    width: calc(100% - 250px);
+    left: 250px; 
     background: var(--white);
     min-height: 100vh;
     transition: width 0.5s, left 0.5s;
 }
 .main.active{
-     /* width: calc(100%-0px);  */
      width: 100%;
      left: 0px; 
 }
 .main .topbar{
     position: fixed;
     top:0;
-    width: calc(100% - 300px);
-    left: 300px;
+    width: calc(100% - 200px);
+    left: 200px;
     background: var(--white2);
     border-bottom: 1px solid rgba(0,0,0,0.05);
     height: 60px;
@@ -103,7 +102,6 @@ body{
 }
 
 .main .topbar.active{
-    /* width: calc(100%-0px); */
     width: 100%;
      left: 0px; 
 }
@@ -156,8 +154,8 @@ section{
 .banner .imgBx{
     position: relative;
     top: 0px;
-    width: 140%;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -271,21 +269,17 @@ p{
     width: 49%;
     min-width: 49%;
     overflow-wrap: break-word;
-    padding: 40px;
+    padding: 12px;
+    line-height: 30px;
 }
 
 .about .content .imgBx{
-      /* margin-left: 14px;   */
     height: 450px;
     margin-right: 0px;
     min-width: 40%;
 }
 
 .about .content .imgBx img{
-     /* right: 100px;  */
-    /* max-width: 60%;   */
-    /* margin-right: 5%;  */
-      /* object-fit:fill;   */
         height: 100%;    
          width: 100%;     
 }
@@ -301,10 +295,6 @@ p{
 border: 1px solid rgba(0,0,0,0.03);
 padding: 50px 20px;
 display: flex;
-margin-right: 15%;
-margin-left: 15%;
-/* background: var(--white2); */
-/* background-image: url("images/pexels-tranmautritam-69432.jpg"); */
 background-size: cover;
 justify-content: center;
 align-items: center;
@@ -404,14 +394,14 @@ display: flex;
 
 .contact .socialMedia{
     position: relative;
-    /* align-items: center; */
     bottom: 20px;
+    width: 280px;
+    margin: 59px auto;
     display: flex; 
     flex-direction: column; 
 }
 
 .contact .socialMedia li{
-   margin-left: 35%;
     list-style: none;
     margin-top: 20px;
 }
@@ -432,7 +422,7 @@ display: flex;
  
  .footer{
 direction: rtl;
-margin-right: 10px;
+margin-right: 0px;
 margin-bottom: 5px;
 color: rgb(139, 127, 127);
 }  
@@ -441,4 +431,23 @@ color: rgb(139, 127, 127);
 
 
 
+@media only screen and (max-width: 1000px) {
+    .services .content {
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+      }
+      .project .content{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+      }
 
+      .about .content{
+
+        flex-direction: column;
+      }
+
+      .about .content .textBox{
+        width: 100%;
+      }
+
+  }
